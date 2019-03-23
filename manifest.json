@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Theresa Problem",
-  "version": "1.0",
+  "version": "2.0",
 
   "description": "Rewrites news content to include Theresa May and Brexit puns. It's too depressing to read otherwise.",
 
