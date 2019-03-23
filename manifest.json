@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Theresa Problem",
+  "version": "1.0",
+
+  "description": "Rewrites BBC news content to include Theresa May and Brexit puns. It's too depressing to read otherwise.",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "browser_action": {
+	  "default_icon": {
+	    "48": "icons/icon-48.png"
+	  }
+  },
+
+  "background": {
+	  "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.bbc.co.uk/news*"],
+      "js": ["theresa-problem.js"]
+    }
+  ]
+
+}
